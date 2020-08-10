@@ -5,10 +5,37 @@
     box-sizing: border-box;
 }
 
-/* HEADER */
+a {
+    text-decoration: none;
+}
+
+.section {
+    display: flex;
+}
+
+.hr {
+    height: 10px;
+    width: 90%;
+    margin: 10px 0 10px 0;
+    background-color: #ff6666;
+}
+
+/*  NAVS   */
+/* header */
 .header {
-    height: 100px;
-    background-color: #890194;
+    height: 80px;
+}
+
+.logo-container {
+    width: 109px;
+    height: 43px;
+}
+
+/* footer */
+.footer {
+    height: 361px;
+    background-color: #596475; 
+    justify-content: center;
 }
 
 /* HERO */
@@ -32,10 +59,4 @@
 .blog {
     height: 200px;
     background-color: #713987;
-}
-
-/* FOOTER */
-.footer {
-    height: 100px;
-    background-color: #555123;
 }
