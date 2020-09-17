@@ -47,8 +47,8 @@ a {
 }
 .footer-logo {
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .footer-nav {
@@ -67,8 +67,17 @@ a {
 
 /* HERO */
 .hero {
+    background-color: #596475;
+}
+
+.hero-image {
     height: 300px;
-    background-color: #224673;
+    background-image: url(images/triangle-house/square-versions/Triangle-1.jpg);
+}
+
+/* DESCRIPTION */
+.desc-para>p {
+    margin: 20px 15px;
 }
 
 /* TESTIMONIALS*/
