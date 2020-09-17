@@ -17,7 +17,7 @@ a {
 .hr {
     height: 10px;
     width: 90%;
-    margin: 10px 0;
+    margin: 8px 0;
     background-color: #ff6666;
 }
 
@@ -25,11 +25,18 @@ a {
 /* header */
 .header {
     height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo-container {
     width: 109px;
     height: 43px;
+}
+
+.menu {
+    width: 50px;
+    height: 20px;
 }
 
 /* footer */
@@ -38,13 +45,24 @@ a {
     background-color: #596475; 
     justify-content: center;
 }
-
-.logo-nav {
+.footer-logo {
+    margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-list {
     list-style-type: none;
+}
+
+.footer-list>li {
+    margin: 15px 0;
+    text-align: center;
 }
 
 /* HERO */
