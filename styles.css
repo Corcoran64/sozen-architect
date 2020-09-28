@@ -117,8 +117,16 @@ ul {
 
 /* PROJECTS */
 .projects {
-    height: 400px;
     background-color: #300983;
+}
+
+.list-item {
+    height: 420px;
+}
+
+.list-item>img {
+    width: 370px;
+    margin-bottom: 10px;
 }
 
 /* BLOG */
