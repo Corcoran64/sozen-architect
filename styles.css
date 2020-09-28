@@ -29,22 +29,25 @@ ul {
     background-color: #ff6666;
 }
 
+.white {
+    background-color: #fff;
+}
+
 /*  NAVS   */
 /* header */
 .header {
-    height: 80px;
+    margin: 15px 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .logo-container {
-    width: 109px;
-    height: 43px;
+    width: 110px;
+    height: 50px;
 }
 
 .menu {
-    width: 50px;
-    height: 20px;
+    width: 25px;
 }
 
 /* footer */
@@ -79,26 +82,39 @@ ul {
 }
 
 .hero-image {
-    height: 300px;
+    height: 450px;
     background-image: url(images/triangle-house/square-versions/Triangle-1.jpg);
     background-size: cover;
 }
 
 .page-title {
     position: relative;
-    top: 150px;
+    top: 325px;
 }
 
-/* DESCRIPTION */
+.hero-desc>p {
+    margin: 20px 15px 30px 15px;
+}
+
+/* ABOUT */
+.about {
+    display: block;
+}
+
 .desc-para>p {
     margin: 20px 15px;
 }
 
-/* TESTIMONIALS*/
 .testimonials {
     height: 400px;
-    background-color: #590590;
+    background-color: #ff6666;
 }
+
+.testimonials-container {
+    position: relative;
+    top: 25px;
+}
+
 /* PROJECTS */
 .projects {
     height: 400px;
