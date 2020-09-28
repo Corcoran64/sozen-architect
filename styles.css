@@ -10,7 +10,7 @@ a {
     color: #FFFFFF;
 }
 
-p, h1, h2, h3, h4, h5, h6, ul {
+p, h1, h2, h3, h4, h5, h6, ul, time {
     margin: 0 15px;
 }
 
@@ -131,6 +131,20 @@ ul {
 
 /* BLOG */
 .blog {
-    height: 200px;
     background-color: #713987;
+}
+
+article {
+    margin: 15px 0;
+}
+
+article>time {
+    display: block;
+    margin: 10px 15px;
+}
+
+article>img {
+    width: 370px;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
