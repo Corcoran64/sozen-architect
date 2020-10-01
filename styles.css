@@ -9,13 +9,17 @@ body {
     font-family: Helvetica, Arial, sans-serif
 }
 
-body p, li {
-    font-size: 1.25em;
+body p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+body li {
+    font-size: 1.2em;
 }
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
 }
 
 p, h1, h2, h3, h4, h5, h6, time {
@@ -38,8 +42,20 @@ ul {
     background-color: #ff6666;
 }
 
-.white {
+.hr-white {
     background-color: #fff;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.grey {
+    color: #596475;
+}
+
+.coral {
+    color: #ff6666;
 }
 
 /*  NAVS   */
@@ -92,17 +108,18 @@ ul {
 
 .hero-image {
     height: 450px;
-    background-image: url(images/triangle-house/square-versions/Triangle-1.jpg);
+    background-image: url(images/homepage-generic/Homepage-banner-square.jpg);
     background-size: cover;
 }
 
 .page-title {
     position: relative;
-    top: 300px;
+    top: 220px;
 }
 
 .page-title>h1 {
     font-size: 3.2em;
+    line-height: 1;
 }
 
 .hero-hr {
@@ -111,6 +128,7 @@ ul {
 
 .hero-desc>p {
     margin: 20px 15px 30px 15px;
+    color: #fff;
 }
 
 /* ABOUT */
@@ -123,22 +141,31 @@ ul {
 }
 
 .testimonials {
-    height: 350px;
+    height: 370px;
     background-color: #ff6666;
+    color: #fff;
 }
 
 .testimonials-container {
     position: relative;
-    top: 25px;
+    top: 30px;
 }
 
 .testimonials-container>p {
-    padding: 30px 0;
+    margin: 30px 10px;
+}
+
+.testimonial-para {
+    font-style: italic;
+}
+
+.testimonial-name {
+    font-weight: bold;
 }
 
 /* PROJECTS */
 .projects {
-    background-color: #300983;
+    background-color: #833009;
 }
 
 .list-item {
@@ -151,20 +178,28 @@ ul {
 }
 
 /* BLOG */
-.blog {
-    background-color: #713987;
-}
-
 article {
     margin: 15px 0;
+    color: #596475;
 }
 
 article>time {
     display: block;
-    margin: 10px 15px;
+    margin: 10px 10px;
+    font-style: italic;
 }
 
 article>img {
     width: 370px;
     margin-bottom: 10px;
+}
+
+button {
+    padding: 3px 15px;
+    background-color: white;
+    color: #ff6666;
+    border: 3px solid #ff6666;
+    margin: 15px 5px;
+    font-weight: bold;
+    font-size: 16px;
 }
