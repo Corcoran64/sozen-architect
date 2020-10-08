@@ -30,9 +30,10 @@ ul {
     list-style-type: none;
 }
 
-.hr {
+hr {
     height: 10px;
     width: 95%;
+    border: 0;
     margin: 0px auto;
     margin-bottom: 15px;
     background-color: #ff6666;
@@ -73,10 +74,15 @@ ul {
 
 /* footer */
 .footer {
-    height: 361px;
+    height: 400px;
     background-color: #596475; 
     justify-content: center;
 }
+.footer-container {
+    position: relative;
+    top: 30px
+}
+
 .footer-logo {
     margin: 0 auto;
     margin-top: 30px;
@@ -160,20 +166,35 @@ ul {
 }
 
 /* PROJECTS */
-.projects {
-    background-color: #833009;
+.projects-container {
+    position: relative;
+    top: 30px;
+}
+
+.project-grid {
+    padding-top: 10px;
 }
 
 .list-item {
     height: 420px;
+    margin-left: 10px;
 }
 
 .list-item>img {
-    width: 370px;
+    width: 355px;
     margin-bottom: 10px;
 }
 
 /* BLOG */
+.blog-container {
+    position: relative;
+    top: 30px;
+}
+
+article:last-of-type {
+    padding-bottom: 25px;
+}
+
 article {
     margin: 15px 0;
     color: #596475;
@@ -186,7 +207,8 @@ article>time {
 }
 
 article>img {
-    width: 370px;
+    width: 355px;
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 
