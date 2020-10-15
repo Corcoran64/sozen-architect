@@ -13,7 +13,7 @@ li {
     font-weight: 600;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
 }
 
@@ -50,7 +50,6 @@ hr {
     color: #ff6666;
 }
 
-/*  NAVS   */
 /* header */
 .header {
     margin: 15px 20px;
@@ -65,6 +64,20 @@ hr {
 
 .menu {
     width: 25px;
+}
+
+.big-menu {
+    display: none;
+}
+
+.big-menu li {
+    display: inline;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.big-menu li:last-of-type {
+    margin-right: 0;
 }
 
 /* footer */
@@ -112,14 +125,15 @@ hr {
 }
 
 .page-title {
-    position: relative;
-    top: 220px;
-    max-width: 510px;
+    padding: 0 25px;
+    padding-top: 220px;
+    max-width: 560px;
 }
 
 .page-title>h1 {
     font-size: 3.2em;
     line-height: 1;
+    padding-left: 10px;
 }
 
 .hero-hr {
@@ -127,9 +141,10 @@ hr {
 }
 
 .hero-desc {
+    padding: 0 25px;
     min-height: 140px;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .hero-desc>p {
@@ -147,6 +162,10 @@ hr {
 .about-grid {
     display: flex;
     flex-wrap: wrap;
+}
+
+.desc-para {
+    margin: 0 auto;
 }
 
 .desc-para>p {
@@ -201,19 +220,19 @@ hr {
 }
 
 .list-item {
-    padding-bottom: 15px;
+    width: 100%;
+    padding: 0 10px 15px 10px;
 }
 
 .list-item>img {
-    width: 355px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
 /* BLOG */
 article {
-    width: 375px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    width: 100%;
+    padding: 0 10px 10px 10px;
     color: #596475;
 }
 
@@ -233,7 +252,7 @@ article>time {
 }
 
 article>img {
-    width: 355px;
+    width: 100%;
     padding-bottom: 15px;
 }
 
@@ -255,8 +274,16 @@ button {
 }
 
 @media only screen and (min-width: 600px) {
-    /* HERO */
+    /* HEADER */
+    .menu {
+        display: none;
+    }
     
+    .big-menu {
+        display: flex;
+        align-items: center;
+    }
+
     /* ABOUT */
     .hidden {
         display: block;
@@ -270,13 +297,22 @@ button {
         width: 50%;
     }
 
+    .desc-para {
+        max-width: 480px;
+        padding: 20px 15px;
+    }
+
+    .testimonials-container {
+        padding: 30px 15px;
+    }
+
     /* PROJECTS */
     .list-item {
         width: 50%;
     }
 
     .project-grid>li:nth-of-type(odd) {
-        padding-right: 15px;
+        padding-right: 10px;
     }
 
     /* ARTICLE */
